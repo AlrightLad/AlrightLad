@@ -47,11 +47,17 @@ An automation nobody can operate is a liability, not an asset.
   restore-point baselining, checksum-verified ISO staging, and deferred reboot.
   Detects Windows servicing corruption that blocks the upgrade path rather than
   failing silently mid-run.
-- **On-call rotation scheduler** — rotation and coverage-pod scheduling in
-  Windmill, writing live call-queue presence through the RingCentral API.
-- **Dormant remote-access reconciliation** — cross-system identity matching
-  between an RMM and a PSA to surface stale privileged accounts across
-  several hundred tenants.
+- **[stale-access-audit](https://github.com/AlrightLad/stale-access-audit)** —
+  dormant privileged-account reconciliation between an RMM and a PSA, joined on
+  an organization-owned GUID pair instead of vendor ids. An evidence model that
+  tells "no login observed" from "no evidence below a floor", and a feed walker
+  that either proves continuity or says it could not.
+- **[ringcentral-queue-presence](https://github.com/AlrightLad/ringcentral-queue-presence)** —
+  a small client that makes exactly one member of a RingCentral call queue the
+  enabled one and proves it did: every member written explicitly under the
+  API's partial-update semantics, protected members never touched, one cached
+  bearer, read-back verification that fails loudly. Pairs with the rotation
+  scheduler reference implementation in msp-automation.
 - Upstream contributions to
   [DTC-Inc/msp-script-library](https://github.com/DTC-Inc/msp-script-library/pulls?q=author%3AAlrightLad).
 
