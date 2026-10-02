@@ -1,6 +1,6 @@
 ## Zach Boogher
 
-Senior Infrastructure & Integrations Engineer — York, PA
+Infrastructure & Integrations Engineer — York, PA
 
 I build the automation that keeps a multi-thousand-endpoint managed fleet
 running: RMM tooling, PSA integrations, workflow orchestration, and the
