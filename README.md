@@ -2,6 +2,10 @@
 
 Infrastructure & Integrations Engineer — York, PA
 
+### [alrightlad.github.io →](https://alrightlad.github.io)
+
+The longer version: live demos of the automation, the homelab, and writing.
+
 I build the automation that keeps a multi-thousand-endpoint managed fleet
 running: RMM tooling, PSA integrations, workflow orchestration, and the
 server lifecycle work underneath it. Most of what I write exists because
