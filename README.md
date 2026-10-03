@@ -42,7 +42,7 @@ An automation nobody can operate is a liability, not an asset.
   PowerShell for managed Windows fleets. RMM-safe by construction: no interactive
   prompts, single-instance locking, transcript rotation, explicit exit codes.
   Sanitized from scripts running against a multi-thousand-endpoint fleet.
-- **Veeam v13 fleet upgrade** — convergent state machine for upgrading a Veeam
+- **[Veeam v13 fleet upgrade](https://github.com/AlrightLad/msp-automation/tree/main/backup-veeam)** — convergent state machine for upgrading a Veeam
   B&R estate across mixed source builds: preflight gating, config backup,
   restore-point baselining, checksum-verified ISO staging, and deferred reboot.
   Detects Windows servicing corruption that blocks the upgrade path rather than
